@@ -19,7 +19,7 @@
     "http-errors": "^1.7.3",
     "kind-of": ">=6.0.3",
     "moment": "^2.24.0",
-    "mongoose": "^5.9.7",
+    "mongoose": "^5.9.9",
     "morgan": "^1.10.0",
     "pug": "^2.0.4"
   },

@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 var moment = require('moment');
+var Book = require('../models/book');
 
 var Schema = mongoose.Schema;
 

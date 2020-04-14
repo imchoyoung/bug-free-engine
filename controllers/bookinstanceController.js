@@ -2,6 +2,7 @@ var BookInstance = require('../models/bookinstance');
 const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var Book = require('../models/book');
+var async = require('async');
 
 // Display list of all BookInstances.
 exports.bookinstance_list = function(req, res, next) {
@@ -123,7 +124,7 @@ exports.bookinstance_delete_post = function(req, res, next) {
     }, function(err, results) {
         if (err) { return next(err); }
         // Success
-        BookInstance.findByIdAndRemove(req.body.authorid, function deleteBookinstance(err) {
+        BookInstance.findByIdAndRemove(req.body.bookinstanceid, function deleteBookinstance(err) {
             if (err) { return next(err); }
             // Success - go to bookinstance list
             res.redirect('/catalog/bookinstance')
