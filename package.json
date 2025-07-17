@@ -11,7 +11,7 @@
   "dependencies": {
     "acorn": "^7.3.1",
     "async": "^3.2.2",
-    "compression": "^1.7.4",
+    "compression": "^1.8.1",
     "cookie-parser": "^1.4.7",
     "debug": "^4.1.1",
     "dotenv": "^8.2.0",
@@ -22,7 +22,7 @@
     "kind-of": ">=6.0.3",
     "moment": "^2.29.4",
     "mongoose": "^8.9.5",
-    "morgan": "^1.10.0",
+    "morgan": "^1.10.1",
     "pug": "^3.0.1"
   },
   "devDependencies": {
